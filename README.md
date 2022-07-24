@@ -48,3 +48,5 @@
   <p> cd /boot ; for i in `ls initramfs-*img`; do dracut -v $i `echo $i|sed "s/initramfs-//g; s/.img//g"` --force; done
   <p> в файле /boot/grub2/grub.cfg заменил rd.lvm.lv=VolGroup00/LogVol00 на rd.lvm.lv=vg_root/lv_root
 </ul>
+
+Данные действия привели к тому, что VM повисла и больше не запустилась
